@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="الصفحة الشخصية لعبدالباقي زعباط - مطور ويب متوسط">
+  <meta name="keywords" content="مطور ويب, عبدالباقي زعباط, برمجة مواقع, تصميم مواقع">
+  <meta name="author" content="عبدالباقي زعباط">
+  <title>عبدالباقي زعباط | مطوّر ويب متوسط</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    :root {
+      --primary-color: #2c3e50;
+      --secondary-color: #2e7d32;
+      --social-color: #3b5998; /* لون فيسبوك */
+      --instagram-color: #E1306C; /* لون إنستغرام */
+      --light-bg: #e8f5e9;
+      --border-color: #c8e6c9;
+      --text-color: #333;
+      --light-text: #777;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: var(--text-color);
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 30px 20px;
+      border-radius: 10px;
+      text-align: center;
+      margin-bottom: 30px;
+      background-image: linear-gradient(to right, var(--primary-color), #34495e);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.2em;
+    }
+
+    h2 {
+      color: var(--primary-color);
+      border-bottom: 2px solid var(--light-bg);
+      padding-bottom: 10px;
+    }
+
+    section {
+      margin: 30px 0;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .contact {
+      background-color: var(--light-bg);
+      border: 1px solid var(--border-color);
+    }
+
+    .social-links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .social-link {
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+
+    .facebook {
+      background-color: var(--social-color);
+      color: white;
+      border: 1px solid var(--social-color);
+    }
+
+    .instagram {
+      background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+      color: white;
+      border: 1px solid #dc2743;
+    }
+
+    .social-link:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      color: var(--light-text);
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+      
+      header {
+        padding: 20px 10px;
+      }
+      
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>عبدالباقي زعباط</h1>
+    <p>مطور ويب - المستوى المتوسط</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>نبذة عني</h2>
+      <p>أهلاً وسهلاً، أنا عبدالباقي زعباط. أعمل على تطوير مهاراتي في تصميم وبرمجة المواقع الإلكترونية.</p>
+      <p>أمتلك خبرة في لغات وتقنيات الويب الأساسية وأسعى للتطور المستمر في هذا المجال.</p>
+    </section>
+
+    <section class="contact">
+      <h2>التواصل</h2>
+      <p>يمكنك التواصل معي عبر:</p>
+      <div class="social-links">
+        <a class="social-link facebook" href="https://www.facebook.com/share/16bFgZpxq9/" target="_blank" rel="noopener noreferrer">
+          صفحتي على فيسبوك
+        </a>
+        <a class="social-link instagram" href="https://www.instagram.com/abdelbakiweb?igsh=YzVpcGMxazc1eTY=" target="_blank" rel="noopener noreferrer">
+          صفحتي على إنستغرام
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>جميع الحقوق محفوظة &copy; <span id="year"></span> - عبدالباقي زعباط</p>
+  </footer>
+
+  <script>
+    // إضافة السنة الحالية تلقائياً
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // تأثير عند التحميل
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelector('header').style.opacity = '1';
+    });
+  </script>
+</body>
+</html>
